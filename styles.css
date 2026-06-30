@@ -52,6 +52,19 @@ h1, h2, h3 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 
 section { padding: 5rem 0; }
 .section-head { text-align: center; max-width: 620px; margin: 0 auto 3rem; }
 .section-head h2 { font-size: clamp(2rem, 4.2vw, 2.8rem); }
+.section-sub { color: var(--muted); margin-top: .8rem; font-size: 1.02rem; }
+
+/* Corpo clínico */
+.team { background: linear-gradient(180deg, var(--bg), #eef6f8); }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.6rem; }
+.doctor { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform .2s ease; }
+.doctor:hover { transform: translateY(-6px); }
+.doctor-photo { height: 260px; background-image: var(--img); background-size: cover; background-position: center top; }
+.doctor-body { padding: 1.5rem; }
+.doctor-tag { display: inline-block; background: rgba(27,160,168,.12); color: var(--brand-dark); font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; padding: .3rem .7rem; border-radius: 999px; margin-bottom: .7rem; }
+.doctor-body h3 { font-size: 1.25rem; margin-bottom: .15rem; }
+.doctor-crm { font-size: .8rem; color: var(--brand); font-weight: 600; margin-bottom: .6rem; }
+.doctor-body p:last-child { color: var(--muted); font-size: .92rem; }
 
 .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
 .service { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); transition: transform .2s ease; }
